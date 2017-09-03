@@ -27,7 +27,7 @@ namespace jaden_case
             {
                 if (characters[i] == ' ')
                 {
-                    Char.ToUpper(characters[i+1]);
+                    characters[i+1] = Char.ToUpper(characters[i+1]);
                 }
             }
             foreach (var item in characters)
@@ -35,6 +35,10 @@ namespace jaden_case
                 Console.WriteLine(item);
             }
             string jadenString = "";
+            foreach (var item in characters)
+            {
+                jadenString += item;
+            }
             return jadenString;
         }
     }
