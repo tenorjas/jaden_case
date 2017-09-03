@@ -19,6 +19,7 @@ namespace jaden_case
             }
 
             char[] characters = phrase.ToCharArray();
+            characters[0] = Char.ToUpper(characters[0]);
             foreach (var item in characters)
             {
                 Console.WriteLine(item);
